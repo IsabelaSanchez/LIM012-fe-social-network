@@ -44,7 +44,7 @@ export const allPost = (data, autor) => {
         <p>${data.date}</p>
         <p> ${data.state}</p>
         </div>
-        <div id='right-div'>
+        <div>
           <img id="btn-edit-post-${data.id}" class="showbtn circulo-imgbut bgcolor" src="img/edit.svg" alt="Editar Post">
           <img id="btn-save-post-${data.id}" class="hide circulo-imgbut bgcolor" src="img/save.svg" alt="Guardar cambios">
           <img id="btn-cancel-post-${data.id}" class="hide circulo-imgbut bgcolor" src="img/x.svg" alt="Cancelar cambios">
