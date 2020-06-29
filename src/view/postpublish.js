@@ -50,8 +50,8 @@ export const allPost = (data, autor) => {
           <img id="btn-cancel-post-${data.id}" class="hide circulo-imgbut bgcolor" src="img/x.svg" alt="Cancelar cambios">
           <a id='btn-delete-${data.id}'><img class="mini-img bgcolor" src="img/trash.png" alt="Insertar imagen"></a>
           <select class='select-edited' id="selec-privacy-${data.id}" disabled="true">
-          <option value="privacity">Privado</option>
-          <option value="public">Publico</option>
+          <option value="privacity">🔒</option>
+          <option value="public">🌎</option>
           </select>
         </div>
         </div>
