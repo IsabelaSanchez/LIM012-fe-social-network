@@ -20,6 +20,7 @@ export default () => {
 
   const btnNewUser = divElemt.querySelector('#btn-register');
   if (btnNewUser) {
+    console.log('hola!!')
     btnNewUser.addEventListener(('click'), () => {
       const names = divElemt.querySelector('#names');
       const email = divElemt.querySelector('#email');
