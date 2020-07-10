@@ -2,11 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/desktop.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/da0572ec61.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="shortcut icon" type="image/png" href="img/solologo.png">
+  <title>Moves</title>
 </head>
 <body>
-  <script type="module" src="index.js"></script>
+  <header id='header' class="hide">
+    <nav>
+      <img src="img/logoHeader.png" class="logo-header"/>
+      <input type="checkbox" id='btn-menu'>
+      <label for='btn-menu'><i class="fas fa-bars"></i></label>
+      <ul class='menu'>
+        <li class="menu-option">
+          <a class='btn-header' id='btn-profile' href='#/profile'>
+            <i class="fas fa-user-edit"></i>Mi Perfil</a>
+        </li>
+        <li class="menu-option">
+          <a href='#/wall'>
+            <i class="fas fa-home"></i>Inicio</a>
+        </li>
+        <li class="menu-option">
+          <a class='btn-header' id = "btn-logout" href='#/'>
+            <i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id ='container'></section>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-storage.js"></script>
+
+  <script type="module" src="main.js"></script>
 </body>
 </html>

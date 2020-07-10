@@ -1,0 +1,154 @@
+body {
+    background-image: url(../img/fondomobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Oswald','Open Sans', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+    }
+    section{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #container{
+        max-height: 100vh;
+    }
+    .view-register{
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin: 1% 7%;
+        padding: 3%;
+        background-color: #fff;
+        max-width: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .view-register div{
+        width: 80%;
+        /* margin-left: 1em; */
+    }
+    .allInputs{
+        margin-top: 4em 0em;
+        width: 80%;
+    }
+    #just-link{
+        margin: 0em 0em 1em;
+    }
+    .logo{
+        margin: 1%;
+        width: 60%;
+    }
+    #dance{
+        display: none;
+    }
+    #texto{
+        color:#726767;
+        text-align:center;
+        font-size: 130%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .subtitle{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-size: 135%;
+    }
+    #face{
+        width:10%;
+        margin-right: 5%;
+        margin-left: 35%;
+    }
+    #gmail{
+        width:9%;
+        margin-left: 0%;
+        margin-right: 35%;
+    }
+    .lil-text{
+        margin-bottom: 1%;
+        margin-top: 1%;
+        font-size: 90%;
+
+    }
+     /*========== user ========== */
+     .user{
+         background-color: rgba(133, 198, 224, 0.3);
+         border-radius: 3%;
+         height: 20%;
+         width: 40%;
+         flex: auto;
+     }
+
+     /*========== post ========== */
+     .view-wall{
+        background-color:#E5E5E5;
+       /* background-color:floralwhite;*/
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 2% 10%;
+    }
+
+    .post{
+        box-sizing: border-box;
+        width: 60%;
+        flex: auto;
+        display: flex;
+        flex-direction: column; 
+        padding-left: 10%;
+    }
+    #post-published{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-post {
+        min-height: 50%;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+    }
+    
+
+    .circulo-profile{
+        margin-left: 36%;
+        margin-top: 5%;
+        width: 100px;
+        /* height: 100px; */
+        border-radius: 100%;
+        border: 4px solid #FFFFFF;
+    }
+     /*========== Header ========== */
+    .logo-header{
+        display: flex;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 0%;
+    }
+    .menu{
+        display: flex;
+        text-align: center;
+        padding-left: 0%;
+        padding: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        list-style: none;
+        flex:auto;
+        line-height: 3;
+        position: relative; 
+        margin-left: 0%;
+    }
+    header label{
+        display: none;
+    }
+}
