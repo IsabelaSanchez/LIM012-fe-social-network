@@ -60,15 +60,21 @@ export default () => {
       .then((result) => {
         createUser(result.user.uid, result.user.displayName, result.user.photoURL, 'Aprendiendo a Bailar')
           .catch((error) => {
+            // eslint-disable-next-line no-console
             console.log(error);
+            // eslint-disable-next-line no-console
             console.log('No se actualizo usuario');
           });
         window.location.hash = '#/wall';
         // changeHash('#/wall');
+        // eslint-disable-next-line no-console
         console.log(result);
+        // eslint-disable-next-line no-console
         console.log('Cuenta de Google registrada!!!');
       }).catch((error) => {
+        // eslint-disable-next-line no-console
         console.log(error);
+        // eslint-disable-next-line no-console
         console.log('No se registro la cuenta :c');
       });
   });
@@ -80,6 +86,7 @@ export default () => {
         createUser(result.user.uid, result.user.displayName, result.user.photoURL, 'Aprendiendo a Bailar');
         window.location.hash = '#/wall';
         // changeHash('#/wall');
+        // eslint-disable-next-line no-console
         console.log('Ingreso con facebook');
       })
       .catch(() => {});
