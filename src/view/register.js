@@ -36,7 +36,7 @@ const registerUser = (userEmail, userPass, userNames) => {
     .then(() => {
     })
     .catch((error) => {
-      console.log(error.code);
+      showMessage('Error al cerrar sesion', error.code);
     });
 };
 

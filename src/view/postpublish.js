@@ -96,7 +96,7 @@ export const allPost = (data, autor) => {
     </div>
   </header>
   <textarea id="textarea-${data.id}" class="only-lines" disabled="true">${data.content}</textarea>
-  <div id ="get-file-upload" type="file" accept="image/*">
+  <div class="get-file-upload" type="file" accept="image/*">
     ${(data.img !== undefined) ? `<img class="image-post" src="${imgPost}" alt=""/>` : `<img class="hide image-post" src="${imgPost}" alt=""/>`}
   </div>
   <div class="btns-likes-comments">
@@ -105,7 +105,7 @@ export const allPost = (data, autor) => {
     <img id="btn-show-comm" class="i-send" src="img/message-square.svg" alt="Mostrar Comentarios">
     <span> Comentarios </span>
   </div>
-  <section class="comments" class="hide">
+  <section class="comments hide">
     <div class="new-comment">
       <img class="circulo-min" src="${userActual.photoURL}" alt="">
       <input type="text" class="bg" id="txtNewComm-${data.id}" placeholder="Escriba un comentario">
@@ -205,7 +205,7 @@ export const allPost = (data, autor) => {
           </div>
       </div>
       <div>
-        <img class="i-mnu-options" id="options" src="img/more-horizontal.svg">
+        <img class="i-mnu-options hide" src="img/more-horizontal.svg">
       </div>
       <div class="tooltip-container hide">
         <div class="tooltip">
@@ -215,7 +215,10 @@ export const allPost = (data, autor) => {
       <div>
     `;
       // comentarios: mostrar menu editar y eliminar
-      const mnuOptions = artElement.querySelector('#options');
+      const mnuOptions = artElement.querySelector('.i-mnu-options');
+      if (userActual.uid === data.userId) {
+        mnuOptions.classList.remove('hide');
+      }
       mnuOptions.addEventListener('click', () => {
         const toolContainer = artElement.querySelector('.tooltip-container');
         toolContainer.classList.toggle('hide');

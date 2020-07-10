@@ -1,5 +1,4 @@
 .bgcolor{
-    /*background-color: #dd6086;*/
     background-color: #EB79BD;
 }
 /* -------------- estilo general para header  -------------- */
@@ -34,12 +33,10 @@ header label:hover{
 .fa-sign-out-alt:before {
     content: "\f2f5";
     color: #EB79BD;
-    /* font-size: 200%; */
 }
 .fa-user-edit:before {
     content: "\f4ff";
     color: #EB79BD;
-    /* font-size: 180%; */
 }
 .fa-home:before {
     content: "\f015";
@@ -89,7 +86,9 @@ header nav ul li a:hover {
 li{
     flex:auto;   
 }
-
+.get-file-upload{
+    text-align: center;
+}
 /* ---------- estilo botones circulares  --------- */
 .circulo-img{
     height: 70%;
